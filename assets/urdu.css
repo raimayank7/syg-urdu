@@ -1,0 +1,24 @@
+/* language site: script letters, phrase cards */
+[lang=hi]{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font);line-height:1.8}
+.sc{font-family:'Noto Nastaliq Urdu','Jameel Noori Nastaleeq','Urdu Typesetting','Noto Naskh Arabic','Segoe UI',serif;line-height:1.7}
+.pl{list-style:none;padding:0;margin:16px 0;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.pl>li{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.pl .sc{font-size:1.5rem;font-weight:600;margin:0}
+.pl .ro{margin:0;color:var(--accent);font-style:italic}
+.pl .hi,.pl .en{margin:0}.pl .en{color:var(--soft)}
+.pl .bt{display:flex;gap:8px;margin-top:8px}
+.pl .bt button,.fc button{min-height:40px;min-width:64px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);font:600 .85rem var(--font);cursor:pointer;padding:4px 12px}
+.pl .bt button.on{background:var(--accent);color:var(--accent-ink)}
+td.sc,th.sc{font-size:1.45rem;white-space:nowrap}
+td.ro{font-style:italic;color:var(--accent)}
+.chips a,.chips button,.prose .btn.sm{min-height:40px}
+.fc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin:16px 0;text-align:center}
+.fc .big{font-family:'Noto Nastaliq Urdu','Jameel Noori Nastaleeq','Urdu Typesetting','Noto Naskh Arabic','Segoe UI',serif;font-size:clamp(3rem,2rem + 8vw,5.5rem);line-height:1.3;margin:.1em 0;letter-spacing:0}
+.fc .opts{display:grid;gap:8px;grid-template-columns:repeat(2,1fr);max-width:420px;margin:12px auto}
+.fc .opts button{min-height:52px;font-size:1.05rem}
+.fc .opts button.ok{border-color:var(--ok);background:rgba(22,163,74,.16)}.fc .opts button.no{border-color:var(--bad);background:rgba(180,35,24,.12)}
+.srch{list-style:none;padding:0;margin:10px 0;display:grid;gap:8px}
+.srch a{display:block;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink)}
+.srch a b{display:block;font-size:1.25rem}.srch a small{color:var(--soft)}
+@media print{.pl .bt,.chips{display:none!important}.pl>li{break-inside:avoid}}
+.sc{line-height:2.3}.pl .sc{font-size:1.45rem;line-height:2.4;text-align:right}td.sc,th.sc{font-size:1.35rem;line-height:2.3}.fc .big{line-height:2.2}.srch a b{line-height:2.2}.prose p .sc,.prose li .sc{font-size:1.12em}

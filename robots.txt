@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://urdu.shareyourgroup.com/sitemap.xml
